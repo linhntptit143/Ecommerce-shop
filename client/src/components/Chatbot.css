@@ -17,6 +17,12 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
+.chatbot-container-box{
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
 .chat-entry {
   display: flex;
   margin: 10px;
@@ -57,7 +63,7 @@
 .input-container {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding-bottom: 10px;
   margin-top: 0
 }
 

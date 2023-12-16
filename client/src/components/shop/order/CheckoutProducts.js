@@ -116,9 +116,7 @@ export const CheckoutComponent = (props) => {
                   <DropIn
                     options={{
                       authorization: state.clientToken,
-                      paypal: {
-                        flow: "vault",
-                      },
+                      paypal: undefined,
                     }}
                     onInstance={(instance) => (state.instance = instance)}
                   />

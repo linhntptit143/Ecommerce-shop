@@ -58,6 +58,7 @@ function Chatbot({ className, isVisible, onToggle }) {
 
   return (
     <div className={`chatbot-container mt-5 ${className}`}>
+      <div className='chatbot-container-box'>
       {isVisible && (
         <div className="chat-container border rounded p-3">
           {chatLog.map((entry, index) => (
@@ -81,7 +82,7 @@ function Chatbot({ className, isVisible, onToggle }) {
         
       )}
       {isVisible && (
-        <div className="input-container mt-3">
+        <div className="input-container">
           <input
             type="text"
             className="form-control"
@@ -94,6 +95,7 @@ function Chatbot({ className, isVisible, onToggle }) {
           </button>
         </div>
       )}
+      </div>
       <button className="toggle-chatbot-btn" onClick={onToggle}>
         {isVisible ? 'Hide Chatbot' : 'Show Chatbot'}
       </button>
